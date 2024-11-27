@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Cotización</title>
+</head>
+<body>
+    
+    <header class="clearfix">
+        <img id="img-header1" class="img float-left" src="https://th.bing.com/th/id/R.7658fddaecdd838a859c4730d1f784ed?rik=Ww7jXATRvVJgQQ&pid=ImgRaw&r=0">
+        <img id="img-header2" class="img float-right" src="https://th.bing.com/th/id/OIP.hPY8JPd8T_v096ZC9SuP-gHaHa?rs=1&pid=ImgDetMain">
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="grid-x">
+            <div id="descripcion" class="cell small-6">
+                <h3>Cotiza tus envíos de paqueteria</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid officiis, iure officia eos hic eveniet numquam. Inventore, minus. Adipisci magnam, voluptatum dolorem atque doloremque nemo laborum explicabo ipsum corrupti magni!</p>
+                <button id="boton-cotizar" class="hollow button expanded" data-open="ejemplo">Cotizar envío</button>
+                <div class="reveal" id="ejemplo" data-reveal>
+
+                    <div id="divs-container">
+                      <form>
+          
+                          <div class="panel">
+          
+                              <div class="grid-container">
+                                  <div class="grid-y">
+                                    <div class="medium-6 cell">
+                                      <label>Dimensiones
+                                        <input id="dimensiones" type="text" placeholder="Ejem. 12m*12m*12m">
+                                      </label>
+                                    </div>
+                                    <div class="medium-6 cell">
+                                      <label>Peso
+                                        <input id="peso" type="text" placeholder="Ejem. 14kg o 1T">
+                                      </label>
+                                    </div>
+                                    <div class="medium-6 cell">
+                                        <label>Código postal origen
+                                          <input id="cp-origen" type="text" placeholder="Ejem. 24090">
+                                        </label>
+                                    </div>
+                                    <div class="medium-6 cell">
+                                        <label>Código postal destino
+                                          <input id="cp-destino" type="text" placeholder="Ejem. 24092">
+                                        </label>
+                                    </div>
+                                  </div>
+                                </div>
+              
+                          </div>
+              
+                          <div class="panel">
+                              <div class="grid-y">
+                                  <div class="medium-6 cell">
+                                      <label>Paquetería
+                                          <select id="paqueteria-opciones">
+                                            <option value="fedex">FedEx</option>
+                                            <option value="estafeta">Estafeta</option>
+                                            <option value="dhl">DHL</option>
+                                            <option value="paquetexpress">PAQUETEXPRESS</option>
+                                            <option value="redpack">REDPACK</option>
+                                            <option value="ivoy">iVoy</option>
+                                            <option value="noventaynueveminutos">99minutos</option>
+                                          </select>
+                                      </label>
+                                  </div>
+                                  <div class="medium-6 cell">
+                                      <label>Tarifa
+                                          <input id="tarifa" type="text" placeholder="Selecciona un servicio de paquetería">
+                                      </label>
+                                  </div>
+                              </div>
+              
+                          </div>
+                          <div class="panel">
+                              <div class="grid-y">
+                                  <div class="medium-6 cell">
+                                      <label>Remitente
+                                          <input id="remitente" type="text" placeholder="Nombre completo">
+                                      </label>
+                                  </div>
+                                  <div class="medium-6 cell">
+                                      <label>Destinatario
+                                          <input id="destinatario" type="text" placeholder="Nombre completo">
+                                      </label>
+                                  </div>
+                                  <div class="medium-6 cell">
+                                      <label>Dirección de envío
+                                          <input id="direccion" type="text" placeholder="Ejem. Calle Tamargo S/N Col. Buenavista / Calle 2 y Calle 4">
+                                      </label>
+                                  </div>
+                                  <div class="medium-6 cell">
+                                      <label>Telefono
+                                          <input id="destinatario" type="text" placeholder="10 dígitos">
+                                      </label>
+                                  </div>
+                                  <div class="medium-6 cell">
+                                      <label>Correo electronico
+                                          <input id="destinatario" type="text" placeholder="example@dom.com">
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+          
+                      </form>
+                      
+                    </div>
+                    <button id="anterior" class="hollow button">Anterior</button>
+                    <button id="siguiente" class="hollow button">Siguiente</button>
+                    <button id="enviar" class="float-right button sucess">Enviar</button>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            </div>
+            <div class="cell small-6">
+                <img id="" class="img float-right" src="https://cdn.dribbble.com/users/123981/screenshots/2071818/camion.gif">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Página de cotización de envíos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <script>$(document).foundation();</script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
